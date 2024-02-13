@@ -82,10 +82,17 @@ body .wrapper {
     line-height: 24.5px;
     margin-bottom: 12px;
 }
+.footer-top .footer-link {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: "Gilroy";
+    color: #9E9E9E;
+}
 .footer-top .footer-link a{
     font-size: 20px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 28px;
     font-family: "Gilroy";
     display: inline-block;
     text-decoration: none;
@@ -273,14 +280,14 @@ body .wrapper {
 }
 
 .tabs-carousel .nav-tabs .nav-link {
-    width: calc(33.33% - 20px);
+    width: calc(100% - 20px);
 }
 
 /* Carousel */
 
 .owl-nav button {
     position: absolute;
-    top: 10px;
+    top: 30%;
     color: #FFFFFF!important;
     margin: 0;
     transition: all 0.3s ease-in-out;
@@ -310,6 +317,7 @@ body .wrapper {
     align-items: center;
     border: 2px solid #2e282c;
     border-radius: 8px;
+    background-color: #120D10;
 }
 .ranking-section .ranking-product-card .img {
     height: 100%;
@@ -319,7 +327,7 @@ body .wrapper {
     border-radius: 8px 0px 0px 8px;
 }
 .ranking-section .ranking-product-card .img {
-    background-color: #120D10;
+    background-color: rgba(255, 255, 255, 2%);
     padding: 20px;
 }
 .ranking-section .ranking-product-card .img img{
@@ -432,9 +440,10 @@ body .wrapper {
     line-height: 19.41px;
     color: #A8A8A8;
     position: relative;
+    background-color: #120D10;
 }
 .admin-cards-section .admin-card::before {
-    background-color: #120D10;
+    background-color: rgba(255, 255, 255, 2%);
     border-radius: 8px 8px 0px 0px;
     position: absolute;
     content: " ";
@@ -645,7 +654,6 @@ body .wrapper {
     padding: 60px 0px;
 }
 .partnerzy-section::before,
-.statystyki-section::before,
 .tailer-section::before {
     content: " ";
     background-color: #2e282c;
@@ -687,9 +695,6 @@ body .wrapper {
 
 .statystyki-section {
     background-image: url('../images/statystyki-bg.png');
-}
-.statystyki-section::before {
-    opacity: 0.9;
 }
 .statystyki-section .statystyki-card {
     border: 2px solid #494548;
@@ -798,6 +803,17 @@ body .wrapper {
     max-width: 100%;
 }
 
+.navbar-nav .dropdown-menu{
+    background: transparent;
+}
+.navbar-nav .dropdown-item {
+    padding-left: 0px;
+    color: #C5C5C5;
+}
+.navbar-nav .dropdown-item:hover {
+    background-color: transparent;
+    color: #fff;
+}
 
 @media screen and (max-width: 767px) {
     .mb-none{
@@ -823,7 +839,7 @@ body .wrapper {
         text-align: center;
     }
     .footer-section .footer-top .col-12{
-        margin-bottom: 65px;
+        margin-bottom: 45px;
     }
 
     .page-heading{
@@ -831,10 +847,14 @@ body .wrapper {
         line-height: 60px;
     }
 
+    .hero-section .vector-down {
+        bottom: 0px;
+    }
     .hero-section {
         justify-content: center;
         align-items: baseline;
         text-align: center;
+        padding-bottom: 80px;
     }
     .hero-section .row {
         flex-direction: column-reverse;
