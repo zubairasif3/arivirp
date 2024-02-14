@@ -41,6 +41,9 @@ body .wrapper {
     /* background-position: center; */
     background-size: cover;
 }
+body .wrapper.index-wrapper {
+    background-image: url('../images/index-bg.png');
+}
 .navbar-nav .nav-link{
     font-size: 16px;
     font-weight: 400;
@@ -578,7 +581,7 @@ body .wrapper {
 }
 
 .header-index {
-    background-image: url('../images/hero-bg.png');
+    /* background-image: url('../images/hero-bg.png'); */
     background-size: cover;
     position: relative;
 }
@@ -587,7 +590,7 @@ body .wrapper {
     content: " ";
     width: 100%;
     height: 100%;
-    background-image: url('../images/hero-logo-transparent.png');
+    /* background-image: url('../images/hero-logo-transparent.png'); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -644,7 +647,7 @@ body .wrapper {
 .partnerzy-section,
 .statystyki-section,
 .tailer-section {
-    background-image: url('../images/trailer-bg.png');
+    /* background-image: url('../images/trailer-bg.png'); */
     background-size: cover;
     position: relative;
     min-height: 100vh;
@@ -656,7 +659,7 @@ body .wrapper {
 .partnerzy-section::before,
 .tailer-section::before {
     content: " ";
-    background-color: #2e282c;
+    /* background-color: #2e282c; */
     opacity: 0.7;
     position: absolute;
     width: 100%;
@@ -669,7 +672,7 @@ body .wrapper {
 .statystyki-section::after,
 .tailer-section::after {
     content: " ";
-    background-image: url('../images/section-bg.png');
+    /* background-image: url('../images/section-bg.png'); */
     background-size: cover;
     position: absolute;
     width: 100%;
@@ -693,9 +696,9 @@ body .wrapper {
     margin-bottom: 40px;
 }
 
-.statystyki-section {
+/* .statystyki-section {
     background-image: url('../images/statystyki-bg.png');
-}
+} */
 .statystyki-section .statystyki-card {
     border: 2px solid #494548;
     border-radius: 8px;
@@ -722,9 +725,9 @@ body .wrapper {
     color: #D22557;
 }
 
-.partnerzy-section {
+/* .partnerzy-section {
     background-image: url('../images/partnerzy-bg.png');
-}
+} */
 .partnerzy-section::before {
     opacity: 0.8;
 }
@@ -805,6 +808,7 @@ body .wrapper {
 
 .navbar-nav .dropdown-menu{
     background: transparent;
+    border: 0px;
 }
 .navbar-nav .dropdown-item {
     padding-left: 0px;
@@ -814,13 +818,24 @@ body .wrapper {
     background-color: transparent;
     color: #fff;
 }
+.navbar-toggler{
+    outline: 0px;
+    box-shadow: none;
+}
 
 @media screen and (max-width: 767px) {
     .mb-none{
         display: none;
     }
+    body .wrapper.index-wrapper{
+        background-position: center;
+    }
     .header {
         background-color: #000000;
+    }
+    .header-index {
+        background-color: transparent;
+        padding-bottom: 50px;
     }
     .navbar-nav .nav-link{
         padding: 5px 0px !important;
