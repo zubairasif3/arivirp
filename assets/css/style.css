@@ -828,7 +828,8 @@ body .wrapper.index-wrapper {
         display: none;
     }
     body .wrapper.index-wrapper{
-        background-position: center;
+        background-image: url('../images/mb-index-bg.png');
+        /* background-position: center; */
     }
     .header {
         background-color: #000000;
